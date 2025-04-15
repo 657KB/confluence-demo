@@ -1,0 +1,1282 @@
+html[data-color-mode="light"] {
+  --color-white: #fff;
+  --color-medium-grey: #707070;
+  --color-charcoal-grey: #333;
+  --color-silver-grey: #e9e9e9;
+  --color-grey: #e6e6e6;
+  --color-blue: #3572b0;
+  --color-blue-navy: #205081;
+  --color-ash-gray: #ccc;
+  --color-light-gray: #f5f5f5;
+  --color-black: #000;
+  --color-light-green: #93c37e;
+  --color-transparent-dark-green: rgba(103, 171, 73, 0.15);
+  --color-transparent-green: rgba(103, 171, 73, 0.5);
+  --color-orange: #f79232;
+  --height-of-wrapper-spinner: 200px;
+  --transition-time: 0.2s;
+  --transition-easing: ease;
+  --zIndexDialog: 2981;
+  --zindex-onboarding-blanket: 3100;
+  --zindex-highlight-element: 4001;
+  --dnd-highlight-border: var(--color-transparent-green);
+  --dnd-highlight-bg: var(--color-transparent-dark-green);
+  --dnd-drop-area: var(--color-light-green);
+  --pagetree-selected-border: var(--color-ash-gray);
+  --pagetree-selected-bg: var(--color-light-gray);
+  --pagetree-hover-border: var(--color-ash-gray);
+  --pagetree-hover-bg: var(--color-light-gray);
+  --sidebar-border: var(--color-silver-grey);
+  --adg3-blue: #2684ff;
+
+  --bannerHeight: 0px;
+  --topNavigationHeight: 48px;
+  --leftSidebarWidth: clamp(240px, 320px, 50vw);
+  --rightPanelWidth: clamp(0px, 0px, 50vw);
+  --ds-space-0: 0rem;
+  --ds-space-025: .125rem;
+  --ds-space-050: .25rem;
+  --ds-space-075: .375rem;
+  --ds-space-100: .5rem;
+  --ds-space-150: .75rem;
+  --ds-space-200: 1rem;
+  --ds-space-250: 1.25rem;
+  --ds-space-300: 1.5rem;
+  --ds-space-400: 2rem;
+  --ds-space-500: 2.5rem;
+  --ds-space-600: 3rem;
+  --ds-space-800: 4rem;
+  --ds-space-1000: 5rem;
+  --ds-space-negative-025: -.125rem;
+  --ds-space-negative-050: -.25rem;
+  --ds-space-negative-075: -.375rem;
+  --ds-space-negative-100: -.5rem;
+  --ds-space-negative-150: -.75rem;
+  --ds-space-negative-200: -1rem;
+  --ds-space-negative-250: -1.25rem;
+  --ds-space-negative-300: -1.5rem;
+  --ds-space-negative-400: -2rem;
+  --ds-UNSAFE-textTransformUppercase: uppercase;
+  --ds-font-heading-xxlarge: normal 653 2rem/2.25rem "Atlassian Sans",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif;
+  --ds-font-heading-xlarge: normal 653 1.75rem/2rem "Atlassian Sans",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif;
+  --ds-font-heading-large: normal 653 1.5rem/1.75rem "Atlassian Sans",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif;
+  --ds-font-heading-medium: normal 653 1.25rem/1.5rem "Atlassian Sans",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif;
+  --ds-font-heading-small: normal 653 1rem/1.25rem "Atlassian Sans",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif;
+  --ds-font-heading-xsmall: normal 653 .875rem/1.25rem "Atlassian Sans",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif;
+  --ds-font-heading-xxsmall: normal 653 .75rem/1rem "Atlassian Sans",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif;
+  --ds-font-body-large: normal 400 1rem/1.5rem "Atlassian Sans",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif;
+  --ds-font-body: normal 400 .875rem/1.25rem "Atlassian Sans",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif;
+  --ds-font-body-small: normal 400 .75rem/1rem "Atlassian Sans",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif;
+  --ds-font-body-UNSAFE_small: normal 400 .75rem/1rem "Atlassian Sans",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif;
+  --ds-font-code: normal 400 .875em/1 "Atlassian Mono",ui-monospace,Menlo,"Segoe UI Mono","Ubuntu Mono",monospace;
+  --ds-font-weight-regular: 400;
+  --ds-font-weight-medium: 500;
+  --ds-font-weight-semibold: 600;
+  --ds-font-weight-bold: 653;
+  --ds-font-family-heading: "Atlassian Sans",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif;
+  --ds-font-family-body: "Atlassian Sans",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif;
+  --ds-font-family-code: "Atlassian Mono",ui-monospace,Menlo,"Segoe UI Mono","Ubuntu Mono",monospace;
+  --ds-font-family-brand-heading: "Charlie Display",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif;
+  --ds-font-family-brand-body: "Charlie Text",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif;
+  --ds-text: #292a2e;
+  --ds-text-accent-lime: #4c6b1f;
+  --ds-text-accent-lime-bolder: #37471f;
+  --ds-text-accent-red: #ae2e24;
+  --ds-text-accent-red-bolder: #5d1f1a;
+  --ds-text-accent-orange: #9e4c00;
+  --ds-text-accent-orange-bolder: #693200;
+  --ds-text-accent-yellow: #7f5f01;
+  --ds-text-accent-yellow-bolder: #533f04;
+  --ds-text-accent-green: #216e4e;
+  --ds-text-accent-green-bolder: #164b35;
+  --ds-text-accent-teal: #206a83;
+  --ds-text-accent-teal-bolder: #164555;
+  --ds-text-accent-blue: #1558bc;
+  --ds-text-accent-blue-bolder: #123263;
+  --ds-text-accent-purple: #803fa5;
+  --ds-text-accent-purple-bolder: #48245d;
+  --ds-text-accent-magenta: #943d73;
+  --ds-text-accent-magenta-bolder: #50253f;
+  --ds-text-accent-gray: #505258;
+  --ds-text-accent-gray-bolder: #1e1f21;
+  --ds-text-disabled: #080f214a;
+  --ds-text-inverse: #fff;
+  --ds-text-selected: #1868db;
+  --ds-text-brand: #1868db;
+  --ds-text-danger: #ae2e24;
+  --ds-text-warning: #9e4c00;
+  --ds-text-warning-inverse: #292a2e;
+  --ds-text-success: #4c6b1f;
+  --ds-text-discovery: #803fa5;
+  --ds-text-information: #1558bc;
+  --ds-text-subtlest: #6b6e76;
+  --ds-text-subtle: #505258;
+  --ds-link: #1868db;
+  --ds-link-pressed: #1558bc;
+  --ds-link-visited: #803fa5;
+  --ds-link-visited-pressed: #48245d;
+  --ds-icon: #292a2e;
+  --ds-icon-accent-lime: #6a9a23;
+  --ds-icon-accent-red: #c9372c;
+  --ds-icon-accent-orange: #e06c00;
+  --ds-icon-accent-yellow: #b38600;
+  --ds-icon-accent-green: #22a06b;
+  --ds-icon-accent-teal: #2898bd;
+  --ds-icon-accent-blue: #357de8;
+  --ds-icon-accent-purple: #af59e1;
+  --ds-icon-accent-magenta: #cd519d;
+  --ds-icon-accent-gray: #7d818a;
+  --ds-icon-disabled: #080f214a;
+  --ds-icon-inverse: #fff;
+  --ds-icon-selected: #1868db;
+  --ds-icon-brand: #1868db;
+  --ds-icon-danger: #c9372c;
+  --ds-icon-warning: #e06c00;
+  --ds-icon-warning-inverse: #292a2e;
+  --ds-icon-success: #6a9a23;
+  --ds-icon-discovery: #af59e1;
+  --ds-icon-information: #357de8;
+  --ds-icon-subtlest: #6b6e76;
+  --ds-icon-subtle: #505258;
+  --ds-border: #0b120e24;
+  --ds-border-accent-lime: #6a9a23;
+  --ds-border-accent-red: #e2483d;
+  --ds-border-accent-orange: #e06c00;
+  --ds-border-accent-yellow: #b38600;
+  --ds-border-accent-green: #22a06b;
+  --ds-border-accent-teal: #2898bd;
+  --ds-border-accent-blue: #357de8;
+  --ds-border-accent-purple: #af59e1;
+  --ds-border-accent-magenta: #cd519d;
+  --ds-border-accent-gray: #7d818a;
+  --ds-border-disabled: #0515240f;
+  --ds-border-focused: #4688ec;
+  --ds-border-input: #8c8f97;
+  --ds-border-inverse: #fff;
+  --ds-border-selected: #1868db;
+  --ds-border-brand: #1868db;
+  --ds-border-danger: #e2483d;
+  --ds-border-warning: #e06c00;
+  --ds-border-success: #6a9a23;
+  --ds-border-discovery: #af59e1;
+  --ds-border-information: #357de8;
+  --ds-border-bold: #7d818a;
+  --ds-background-accent-lime-subtlest: #efffd6;
+  --ds-background-accent-lime-subtlest-hovered: #d3f1a7;
+  --ds-background-accent-lime-subtlest-pressed: #b3df72;
+  --ds-background-accent-lime-subtler: #d3f1a7;
+  --ds-background-accent-lime-subtler-hovered: #b3df72;
+  --ds-background-accent-lime-subtler-pressed: #94c748;
+  --ds-background-accent-lime-subtle: #94c748;
+  --ds-background-accent-lime-subtle-hovered: #b3df72;
+  --ds-background-accent-lime-subtle-pressed: #d3f1a7;
+  --ds-background-accent-lime-bolder: #5b7f24;
+  --ds-background-accent-lime-bolder-hovered: #4c6b1f;
+  --ds-background-accent-lime-bolder-pressed: #37471f;
+  --ds-background-accent-red-subtlest: #ffeceb;
+  --ds-background-accent-red-subtlest-hovered: #ffd5d2;
+  --ds-background-accent-red-subtlest-pressed: #fd9891;
+  --ds-background-accent-red-subtler: #ffd5d2;
+  --ds-background-accent-red-subtler-hovered: #fd9891;
+  --ds-background-accent-red-subtler-pressed: #f87168;
+  --ds-background-accent-red-subtle: #f87168;
+  --ds-background-accent-red-subtle-hovered: #fd9891;
+  --ds-background-accent-red-subtle-pressed: #ffd5d2;
+  --ds-background-accent-red-bolder: #c9372c;
+  --ds-background-accent-red-bolder-hovered: #ae2e24;
+  --ds-background-accent-red-bolder-pressed: #5d1f1a;
+  --ds-background-accent-orange-subtlest: #fff5db;
+  --ds-background-accent-orange-subtlest-hovered: #fce4a6;
+  --ds-background-accent-orange-subtlest-pressed: #fbc828;
+  --ds-background-accent-orange-subtler: #fce4a6;
+  --ds-background-accent-orange-subtler-hovered: #fbc828;
+  --ds-background-accent-orange-subtler-pressed: #fca700;
+  --ds-background-accent-orange-subtle: #fca700;
+  --ds-background-accent-orange-subtle-hovered: #fbc828;
+  --ds-background-accent-orange-subtle-pressed: #fce4a6;
+  --ds-background-accent-orange-bolder: #bd5b00;
+  --ds-background-accent-orange-bolder-hovered: #9e4c00;
+  --ds-background-accent-orange-bolder-pressed: #693200;
+  --ds-background-accent-yellow-subtlest: #fef7c8;
+  --ds-background-accent-yellow-subtlest-hovered: #f5e989;
+  --ds-background-accent-yellow-subtlest-pressed: #eed12b;
+  --ds-background-accent-yellow-subtler: #f5e989;
+  --ds-background-accent-yellow-subtler-hovered: #eed12b;
+  --ds-background-accent-yellow-subtler-pressed: #ddb30e;
+  --ds-background-accent-yellow-subtle: #eed12b;
+  --ds-background-accent-yellow-subtle-hovered: #ddb30e;
+  --ds-background-accent-yellow-subtle-pressed: #cf9f02;
+  --ds-background-accent-yellow-bolder: #946f00;
+  --ds-background-accent-yellow-bolder-hovered: #7f5f01;
+  --ds-background-accent-yellow-bolder-pressed: #533f04;
+  --ds-background-accent-green-subtlest: #dcfff1;
+  --ds-background-accent-green-subtlest-hovered: #baf3db;
+  --ds-background-accent-green-subtlest-pressed: #7ee2b8;
+  --ds-background-accent-green-subtler: #baf3db;
+  --ds-background-accent-green-subtler-hovered: #7ee2b8;
+  --ds-background-accent-green-subtler-pressed: #4bce97;
+  --ds-background-accent-green-subtle: #4bce97;
+  --ds-background-accent-green-subtle-hovered: #7ee2b8;
+  --ds-background-accent-green-subtle-pressed: #baf3db;
+  --ds-background-accent-green-bolder: #1f845a;
+  --ds-background-accent-green-bolder-hovered: #216e4e;
+  --ds-background-accent-green-bolder-pressed: #164b35;
+  --ds-background-accent-teal-subtlest: #e7f9ff;
+  --ds-background-accent-teal-subtlest-hovered: #c6edfb;
+  --ds-background-accent-teal-subtlest-pressed: #9dd9ee;
+  --ds-background-accent-teal-subtler: #c6edfb;
+  --ds-background-accent-teal-subtler-hovered: #9dd9ee;
+  --ds-background-accent-teal-subtler-pressed: #6cc3e0;
+  --ds-background-accent-teal-subtle: #6cc3e0;
+  --ds-background-accent-teal-subtle-hovered: #9dd9ee;
+  --ds-background-accent-teal-subtle-pressed: #c6edfb;
+  --ds-background-accent-teal-bolder: #227d9b;
+  --ds-background-accent-teal-bolder-hovered: #206a83;
+  --ds-background-accent-teal-bolder-pressed: #164555;
+  --ds-background-accent-blue-subtlest: #e9f2fe;
+  --ds-background-accent-blue-subtlest-hovered: #cfe1fd;
+  --ds-background-accent-blue-subtlest-pressed: #8fb8f6;
+  --ds-background-accent-blue-subtler: #cfe1fd;
+  --ds-background-accent-blue-subtler-hovered: #8fb8f6;
+  --ds-background-accent-blue-subtler-pressed: #669df1;
+  --ds-background-accent-blue-subtle: #669df1;
+  --ds-background-accent-blue-subtle-hovered: #8fb8f6;
+  --ds-background-accent-blue-subtle-pressed: #cfe1fd;
+  --ds-background-accent-blue-bolder: #1868db;
+  --ds-background-accent-blue-bolder-hovered: #1558bc;
+  --ds-background-accent-blue-bolder-pressed: #123263;
+  --ds-background-accent-purple-subtlest: #f8eefe;
+  --ds-background-accent-purple-subtlest-hovered: #eed7fc;
+  --ds-background-accent-purple-subtlest-pressed: #d8a0f7;
+  --ds-background-accent-purple-subtler: #eed7fc;
+  --ds-background-accent-purple-subtler-hovered: #d8a0f7;
+  --ds-background-accent-purple-subtler-pressed: #c97cf4;
+  --ds-background-accent-purple-subtle: #c97cf4;
+  --ds-background-accent-purple-subtle-hovered: #d8a0f7;
+  --ds-background-accent-purple-subtle-pressed: #eed7fc;
+  --ds-background-accent-purple-bolder: #964ac0;
+  --ds-background-accent-purple-bolder-hovered: #803fa5;
+  --ds-background-accent-purple-bolder-pressed: #48245d;
+  --ds-background-accent-magenta-subtlest: #ffecf8;
+  --ds-background-accent-magenta-subtlest-hovered: #fdd0ec;
+  --ds-background-accent-magenta-subtlest-pressed: #f797d2;
+  --ds-background-accent-magenta-subtler: #fdd0ec;
+  --ds-background-accent-magenta-subtler-hovered: #f797d2;
+  --ds-background-accent-magenta-subtler-pressed: #e774bb;
+  --ds-background-accent-magenta-subtle: #e774bb;
+  --ds-background-accent-magenta-subtle-hovered: #f797d2;
+  --ds-background-accent-magenta-subtle-pressed: #fdd0ec;
+  --ds-background-accent-magenta-bolder: #ae4787;
+  --ds-background-accent-magenta-bolder-hovered: #943d73;
+  --ds-background-accent-magenta-bolder-pressed: #50253f;
+  --ds-background-accent-gray-subtlest: #f0f1f2;
+  --ds-background-accent-gray-subtlest-hovered: #dddee1;
+  --ds-background-accent-gray-subtlest-pressed: #b7b9be;
+  --ds-background-accent-gray-subtler: #dddee1;
+  --ds-background-accent-gray-subtler-hovered: #b7b9be;
+  --ds-background-accent-gray-subtler-pressed: #8c8f97;
+  --ds-background-accent-gray-subtle: #8c8f97;
+  --ds-background-accent-gray-subtle-hovered: #b7b9be;
+  --ds-background-accent-gray-subtle-pressed: #dddee1;
+  --ds-background-accent-gray-bolder: #6b6e76;
+  --ds-background-accent-gray-bolder-hovered: #505258;
+  --ds-background-accent-gray-bolder-pressed: #3b3d42;
+  --ds-background-disabled: #17171708;
+  --ds-background-input: #fff;
+  --ds-background-input-hovered: #f8f8f8;
+  --ds-background-input-pressed: #fff;
+  --ds-background-inverse-subtle: #00000029;
+  --ds-background-inverse-subtle-hovered: #0000003d;
+  --ds-background-inverse-subtle-pressed: #00000052;
+  --ds-background-neutral: #0515240f;
+  --ds-background-neutral-hovered: #0b120e24;
+  --ds-background-neutral-pressed: #080f214a;
+  --ds-background-neutral-subtle: #0000;
+  --ds-background-neutral-subtle-hovered: #0515240f;
+  --ds-background-neutral-subtle-pressed: #0b120e24;
+  --ds-background-neutral-bold: #292a2e;
+  --ds-background-neutral-bold-hovered: #3b3d42;
+  --ds-background-neutral-bold-pressed: #505258;
+  --ds-background-selected: #e9f2fe;
+  --ds-background-selected-hovered: #cfe1fd;
+  --ds-background-selected-pressed: #8fb8f6;
+  --ds-background-selected-bold: #1868db;
+  --ds-background-selected-bold-hovered: #1558bc;
+  --ds-background-selected-bold-pressed: #123263;
+  --ds-background-brand-subtlest: #e9f2fe;
+  --ds-background-brand-subtlest-hovered: #cfe1fd;
+  --ds-background-brand-subtlest-pressed: #8fb8f6;
+  --ds-background-brand-bold: #1868db;
+  --ds-background-brand-bold-hovered: #1558bc;
+  --ds-background-brand-bold-pressed: #123263;
+  --ds-background-brand-boldest: #1c2b42;
+  --ds-background-brand-boldest-hovered: #123263;
+  --ds-background-brand-boldest-pressed: #1558bc;
+  --ds-background-danger: #ffeceb;
+  --ds-background-danger-hovered: #ffd5d2;
+  --ds-background-danger-pressed: #fd9891;
+  --ds-background-danger-bold: #c9372c;
+  --ds-background-danger-bold-hovered: #ae2e24;
+  --ds-background-danger-bold-pressed: #5d1f1a;
+  --ds-background-warning: #fff5db;
+  --ds-background-warning-hovered: #fce4a6;
+  --ds-background-warning-pressed: #fbc828;
+  --ds-background-warning-bold: #fbc828;
+  --ds-background-warning-bold-hovered: #fca700;
+  --ds-background-warning-bold-pressed: #f68909;
+  --ds-background-success: #efffd6;
+  --ds-background-success-hovered: #d3f1a7;
+  --ds-background-success-pressed: #b3df72;
+  --ds-background-success-bold: #5b7f24;
+  --ds-background-success-bold-hovered: #4c6b1f;
+  --ds-background-success-bold-pressed: #37471f;
+  --ds-background-discovery: #f8eefe;
+  --ds-background-discovery-hovered: #eed7fc;
+  --ds-background-discovery-pressed: #d8a0f7;
+  --ds-background-discovery-bold: #964ac0;
+  --ds-background-discovery-bold-hovered: #803fa5;
+  --ds-background-discovery-bold-pressed: #48245d;
+  --ds-background-information: #e9f2fe;
+  --ds-background-information-hovered: #cfe1fd;
+  --ds-background-information-pressed: #8fb8f6;
+  --ds-background-information-bold: #1868db;
+  --ds-background-information-bold-hovered: #1558bc;
+  --ds-background-information-bold-pressed: #123263;
+  --ds-blanket: #050c1f75;
+  --ds-blanket-selected: #388bff14;
+  --ds-blanket-danger: #ef5c4814;
+  --ds-interaction-hovered: #00000029;
+  --ds-interaction-pressed: #00000052;
+  --ds-skeleton: #0515240f;
+  --ds-skeleton-subtle: #17171708;
+  --ds-chart-categorical-1: #357de8;
+  --ds-chart-categorical-1-hovered: #1868db;
+  --ds-chart-categorical-2: #82b536;
+  --ds-chart-categorical-2-hovered: #6a9a23;
+  --ds-chart-categorical-3: #bf63f3;
+  --ds-chart-categorical-3-hovered: #af59e1;
+  --ds-chart-categorical-4: #f68909;
+  --ds-chart-categorical-4-hovered: #e06c00;
+  --ds-chart-categorical-5: #1558bc;
+  --ds-chart-categorical-5-hovered: #123263;
+  --ds-chart-categorical-6: #964ac0;
+  --ds-chart-categorical-6-hovered: #803fa5;
+  --ds-chart-categorical-7: #42b2d7;
+  --ds-chart-categorical-7-hovered: #2898bd;
+  --ds-chart-categorical-8: #bd5b00;
+  --ds-chart-categorical-8-hovered: #9e4c00;
+  --ds-chart-lime-bold: #6a9a23;
+  --ds-chart-lime-bold-hovered: #5b7f24;
+  --ds-chart-lime-bolder: #5b7f24;
+  --ds-chart-lime-bolder-hovered: #4c6b1f;
+  --ds-chart-lime-boldest: #4c6b1f;
+  --ds-chart-lime-boldest-hovered: #37471f;
+  --ds-chart-neutral: #8c8f97;
+  --ds-chart-neutral-hovered: #7d818a;
+  --ds-chart-red-bold: #f15b50;
+  --ds-chart-red-bold-hovered: #e2483d;
+  --ds-chart-red-bolder: #e2483d;
+  --ds-chart-red-bolder-hovered: #c9372c;
+  --ds-chart-red-boldest: #ae2e24;
+  --ds-chart-red-boldest-hovered: #5d1f1a;
+  --ds-chart-orange-bold: #e06c00;
+  --ds-chart-orange-bold-hovered: #bd5b00;
+  --ds-chart-orange-bolder: #bd5b00;
+  --ds-chart-orange-bolder-hovered: #9e4c00;
+  --ds-chart-orange-boldest: #9e4c00;
+  --ds-chart-orange-boldest-hovered: #693200;
+  --ds-chart-yellow-bold: #b38600;
+  --ds-chart-yellow-bold-hovered: #946f00;
+  --ds-chart-yellow-bolder: #946f00;
+  --ds-chart-yellow-bolder-hovered: #7f5f01;
+  --ds-chart-yellow-boldest: #7f5f01;
+  --ds-chart-yellow-boldest-hovered: #533f04;
+  --ds-chart-green-bold: #22a06b;
+  --ds-chart-green-bold-hovered: #1f845a;
+  --ds-chart-green-bolder: #1f845a;
+  --ds-chart-green-bolder-hovered: #216e4e;
+  --ds-chart-green-boldest: #216e4e;
+  --ds-chart-green-boldest-hovered: #164b35;
+  --ds-chart-teal-bold: #2898bd;
+  --ds-chart-teal-bold-hovered: #227d9b;
+  --ds-chart-teal-bolder: #227d9b;
+  --ds-chart-teal-bolder-hovered: #206a83;
+  --ds-chart-teal-boldest: #206a83;
+  --ds-chart-teal-boldest-hovered: #164555;
+  --ds-chart-blue-bold: #4688ec;
+  --ds-chart-blue-bold-hovered: #357de8;
+  --ds-chart-blue-bolder: #357de8;
+  --ds-chart-blue-bolder-hovered: #1868db;
+  --ds-chart-blue-boldest: #1558bc;
+  --ds-chart-blue-boldest-hovered: #123263;
+  --ds-chart-purple-bold: #bf63f3;
+  --ds-chart-purple-bold-hovered: #af59e1;
+  --ds-chart-purple-bolder: #af59e1;
+  --ds-chart-purple-bolder-hovered: #964ac0;
+  --ds-chart-purple-boldest: #803fa5;
+  --ds-chart-purple-boldest-hovered: #48245d;
+  --ds-chart-magenta-bold: #da62ac;
+  --ds-chart-magenta-bold-hovered: #cd519d;
+  --ds-chart-magenta-bolder: #cd519d;
+  --ds-chart-magenta-bolder-hovered: #ae4787;
+  --ds-chart-magenta-boldest: #943d73;
+  --ds-chart-magenta-boldest-hovered: #50253f;
+  --ds-chart-gray-bold: #8c8f97;
+  --ds-chart-gray-bold-hovered: #7d818a;
+  --ds-chart-gray-bolder: #7d818a;
+  --ds-chart-gray-bolder-hovered: #6b6e76;
+  --ds-chart-gray-boldest: #505258;
+  --ds-chart-gray-boldest-hovered: #3b3d42;
+  --ds-chart-brand: #357de8;
+  --ds-chart-brand-hovered: #1868db;
+  --ds-chart-danger: #e2483d;
+  --ds-chart-danger-hovered: #c9372c;
+  --ds-chart-danger-bold: #ae2e24;
+  --ds-chart-danger-bold-hovered: #5d1f1a;
+  --ds-chart-warning: #f68909;
+  --ds-chart-warning-hovered: #e06c00;
+  --ds-chart-warning-bold: #bd5b00;
+  --ds-chart-warning-bold-hovered: #9e4c00;
+  --ds-chart-success: #82b536;
+  --ds-chart-success-hovered: #6a9a23;
+  --ds-chart-success-bold: #5b7f24;
+  --ds-chart-success-bold-hovered: #4c6b1f;
+  --ds-chart-discovery: #bf63f3;
+  --ds-chart-discovery-hovered: #af59e1;
+  --ds-chart-discovery-bold: #803fa5;
+  --ds-chart-discovery-bold-hovered: #48245d;
+  --ds-chart-information: #357de8;
+  --ds-chart-information-hovered: #1868db;
+  --ds-chart-information-bold: #1558bc;
+  --ds-chart-information-bold-hovered: #123263;
+  --ds-surface: #fff;
+  --ds-surface-hovered: #f0f1f2;
+  --ds-surface-pressed: #dddee1;
+  --ds-surface-overlay: #fff;
+  --ds-surface-overlay-hovered: #f0f1f2;
+  --ds-surface-overlay-pressed: #dddee1;
+  --ds-surface-raised: #fff;
+  --ds-surface-raised-hovered: #f0f1f2;
+  --ds-surface-raised-pressed: #dddee1;
+  --ds-surface-sunken: #f8f8f8;
+  --ds-shadow-overflow: 0px 0px 8px #1e1f2129,0px 0px 1px #1e1f211f;
+  --ds-shadow-overflow-perimeter: #1e1f211f;
+  --ds-shadow-overflow-spread: #1e1f2129;
+  --ds-shadow-overlay: 0px 8px 12px #1e1f2126,0px 0px 1px #1e1f214f;
+  --ds-shadow-raised: 0px 1px 1px #1e1f2140,0px 0px 1px #1e1f214f;
+  --ds-opacity-disabled: .4;
+  --ds-opacity-loading: .2;
+  --ds-UNSAFE-transparent: transparent;
+  --ds-elevation-surface-current: #fff;
+
+  --n_bnrM: 0px;
+  --n_tbrM: 48px;
+  --full-cover-image-margin: -40px;
+  --full-cover-image-width: calc(100% + 80px);
+
+  --ak-renderer-base-font-size: 16px;
+  --ak-renderer-editor-font-heading-h1: normal 600 1.71429em/1.16667 ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, "Helvetica Neue", sans-serif;
+  --ak-renderer-editor-font-heading-h2: normal 600 1.42857em/1.2 ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, "Helvetica Neue", sans-serif;
+  --ak-renderer-editor-font-heading-h3: normal 600 1.14286em/1.25 ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, "Helvetica Neue", sans-serif;
+  --ak-renderer-editor-font-heading-h4: normal 600  1em/1.14286 ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, "Helvetica Neue", sans-serif;
+  --ak-renderer-editor-font-heading-h5: normal 600  0.857143em/1.33333 ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, "Helvetica Neue", sans-serif;
+  --ak-renderer-editor-font-heading-h6: normal 600 0.785714em/1.45455 ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, "Helvetica Neue", sans-serif;
+  --ak-renderer-editor-font-normal-text: normal 400 1em/1.714 ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, "Helvetica Neue", sans-serif;
+}
+
+html[data-color-mode="dark"] {
+  --bannerHeight: 0px;
+  --topNavigationHeight: 48px;
+  --leftSidebarWidth: clamp(240px, 320px, 50vw);
+  --rightPanelWidth: clamp(0px, 0px, 50vw);
+  --ds-space-0: 0rem;
+  --ds-space-025: .125rem;
+  --ds-space-050: .25rem;
+  --ds-space-075: .375rem;
+  --ds-space-100: .5rem;
+  --ds-space-150: .75rem;
+  --ds-space-200: 1rem;
+  --ds-space-250: 1.25rem;
+  --ds-space-300: 1.5rem;
+  --ds-space-400: 2rem;
+  --ds-space-500: 2.5rem;
+  --ds-space-600: 3rem;
+  --ds-space-800: 4rem;
+  --ds-space-1000: 5rem;
+  --ds-space-negative-025: -.125rem;
+  --ds-space-negative-050: -.25rem;
+  --ds-space-negative-075: -.375rem;
+  --ds-space-negative-100: -.5rem;
+  --ds-space-negative-150: -.75rem;
+  --ds-space-negative-200: -1rem;
+  --ds-space-negative-250: -1.25rem;
+  --ds-space-negative-300: -1.5rem;
+  --ds-space-negative-400: -2rem;
+  --ds-UNSAFE-textTransformUppercase: uppercase;
+  --ds-font-heading-xxlarge: normal 653 2rem/2.25rem "Atlassian Sans",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif;
+  --ds-font-heading-xlarge: normal 653 1.75rem/2rem "Atlassian Sans",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif;
+  --ds-font-heading-large: normal 653 1.5rem/1.75rem "Atlassian Sans",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif;
+  --ds-font-heading-medium: normal 653 1.25rem/1.5rem "Atlassian Sans",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif;
+  --ds-font-heading-small: normal 653 1rem/1.25rem "Atlassian Sans",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif;
+  --ds-font-heading-xsmall: normal 653 .875rem/1.25rem "Atlassian Sans",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif;
+  --ds-font-heading-xxsmall: normal 653 .75rem/1rem "Atlassian Sans",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif;
+  --ds-font-body-large: normal 400 1rem/1.5rem "Atlassian Sans",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif;
+  --ds-font-body: normal 400 .875rem/1.25rem "Atlassian Sans",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif;
+  --ds-font-body-small: normal 400 .75rem/1rem "Atlassian Sans",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif;
+  --ds-font-body-UNSAFE_small: normal 400 .75rem/1rem "Atlassian Sans",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif;
+  --ds-font-code: normal 400 .875em/1 "Atlassian Mono",ui-monospace,Menlo,"Segoe UI Mono","Ubuntu Mono",monospace;
+  --ds-font-weight-regular: 400;
+  --ds-font-weight-medium: 500;
+  --ds-font-weight-semibold: 600;
+  --ds-font-weight-bold: 653;
+  --ds-font-family-heading: "Atlassian Sans",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif;
+  --ds-font-family-body: "Atlassian Sans",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif;
+  --ds-font-family-code: "Atlassian Mono",ui-monospace,Menlo,"Segoe UI Mono","Ubuntu Mono",monospace;
+  --ds-font-family-brand-heading: "Charlie Display",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif;
+  --ds-font-family-brand-body: "Charlie Text",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif;
+  --ds-text: #bfc1c4;
+  --ds-text-accent-lime: #b3df72;
+  --ds-text-accent-lime-bolder: #d3f1a7;
+  --ds-text-accent-red: #fd9891;
+  --ds-text-accent-red-bolder: #ffd5d2;
+  --ds-text-accent-orange: #fbc828;
+  --ds-text-accent-orange-bolder: #fce4a6;
+  --ds-text-accent-yellow: #eed12b;
+  --ds-text-accent-yellow-bolder: #f5e989;
+  --ds-text-accent-green: #7ee2b8;
+  --ds-text-accent-green-bolder: #baf3db;
+  --ds-text-accent-teal: #9dd9ee;
+  --ds-text-accent-teal-bolder: #c6edfb;
+  --ds-text-accent-blue: #8fb8f6;
+  --ds-text-accent-blue-bolder: #cfe1fd;
+  --ds-text-accent-purple: #d8a0f7;
+  --ds-text-accent-purple-bolder: #eed7fc;
+  --ds-text-accent-magenta: #f797d2;
+  --ds-text-accent-magenta-bolder: #fdd0ec;
+  --ds-text-accent-gray: #a9abaf;
+  --ds-text-accent-gray-bolder: #e2e3e4;
+  --ds-text-disabled: #e5e9f640;
+  --ds-text-inverse: #1f1f21;
+  --ds-text-selected: #669df1;
+  --ds-text-brand: #669df1;
+  --ds-text-danger: #fd9891;
+  --ds-text-warning: #fbc828;
+  --ds-text-warning-inverse: #1f1f21;
+  --ds-text-success: #b3df72;
+  --ds-text-discovery: #d8a0f7;
+  --ds-text-information: #8fb8f6;
+  --ds-text-subtlest: #96999e;
+  --ds-text-subtle: #a9abaf;
+  --ds-link: #669df1;
+  --ds-link-pressed: #8fb8f6;
+  --ds-link-visited: #d8a0f7;
+  --ds-link-visited-pressed: #eed7fc;
+  --ds-icon: #cecfd2;
+  --ds-icon-accent-lime: #82b536;
+  --ds-icon-accent-red: #e2483d;
+  --ds-icon-accent-orange: #f68909;
+  --ds-icon-accent-yellow: #eed12b;
+  --ds-icon-accent-green: #2abb7f;
+  --ds-icon-accent-teal: #42b2d7;
+  --ds-icon-accent-blue: #4688ec;
+  --ds-icon-accent-purple: #bf63f3;
+  --ds-icon-accent-magenta: #da62ac;
+  --ds-icon-accent-gray: #7e8188;
+  --ds-icon-disabled: #e5e9f640;
+  --ds-icon-inverse: #1f1f21;
+  --ds-icon-selected: #669df1;
+  --ds-icon-brand: #669df1;
+  --ds-icon-danger: #f15b50;
+  --ds-icon-warning: #fbc828;
+  --ds-icon-warning-inverse: #1f1f21;
+  --ds-icon-success: #b3df72;
+  --ds-icon-discovery: #bf63f3;
+  --ds-icon-information: #4688ec;
+  --ds-icon-subtlest: #96999e;
+  --ds-icon-subtle: #a9abaf;
+  --ds-border: #e3e4f21f;
+  --ds-border-accent-lime: #82b536;
+  --ds-border-accent-red: #f15b50;
+  --ds-border-accent-orange: #f68909;
+  --ds-border-accent-yellow: #cf9f02;
+  --ds-border-accent-green: #2abb7f;
+  --ds-border-accent-teal: #42b2d7;
+  --ds-border-accent-blue: #4688ec;
+  --ds-border-accent-purple: #bf63f3;
+  --ds-border-accent-magenta: #da62ac;
+  --ds-border-accent-gray: #7e8188;
+  --ds-border-disabled: #ceced912;
+  --ds-border-focused: #8fb8f6;
+  --ds-border-input: #7e8188;
+  --ds-border-inverse: #18191a;
+  --ds-border-selected: #669df1;
+  --ds-border-brand: #669df1;
+  --ds-border-danger: #f15b50;
+  --ds-border-warning: #f68909;
+  --ds-border-success: #82b536;
+  --ds-border-discovery: #bf63f3;
+  --ds-border-information: #4688ec;
+  --ds-border-bold: #7e8188;
+  --ds-background-accent-lime-subtlest: #28311b;
+  --ds-background-accent-lime-subtlest-hovered: #37471f;
+  --ds-background-accent-lime-subtlest-pressed: #4c6b1f;
+  --ds-background-accent-lime-subtler: #37471f;
+  --ds-background-accent-lime-subtler-hovered: #4c6b1f;
+  --ds-background-accent-lime-subtler-pressed: #5b7f24;
+  --ds-background-accent-lime-subtle: #4c6b1f;
+  --ds-background-accent-lime-subtle-hovered: #37471f;
+  --ds-background-accent-lime-subtle-pressed: #28311b;
+  --ds-background-accent-lime-bolder: #94c748;
+  --ds-background-accent-lime-bolder-hovered: #b3df72;
+  --ds-background-accent-lime-bolder-pressed: #d3f1a7;
+  --ds-background-accent-red-subtlest: #42221f;
+  --ds-background-accent-red-subtlest-hovered: #5d1f1a;
+  --ds-background-accent-red-subtlest-pressed: #ae2e24;
+  --ds-background-accent-red-subtler: #5d1f1a;
+  --ds-background-accent-red-subtler-hovered: #ae2e24;
+  --ds-background-accent-red-subtler-pressed: #c9372c;
+  --ds-background-accent-red-subtle: #ae2e24;
+  --ds-background-accent-red-subtle-hovered: #5d1f1a;
+  --ds-background-accent-red-subtle-pressed: #42221f;
+  --ds-background-accent-red-bolder: #f87168;
+  --ds-background-accent-red-bolder-hovered: #fd9891;
+  --ds-background-accent-red-bolder-pressed: #ffd5d2;
+  --ds-background-accent-orange-subtlest: #3a2c1f;
+  --ds-background-accent-orange-subtlest-hovered: #693200;
+  --ds-background-accent-orange-subtlest-pressed: #9e4c00;
+  --ds-background-accent-orange-subtler: #693200;
+  --ds-background-accent-orange-subtler-hovered: #9e4c00;
+  --ds-background-accent-orange-subtler-pressed: #bd5b00;
+  --ds-background-accent-orange-subtle: #9e4c00;
+  --ds-background-accent-orange-subtle-hovered: #693200;
+  --ds-background-accent-orange-subtle-pressed: #3a2c1f;
+  --ds-background-accent-orange-bolder: #fca700;
+  --ds-background-accent-orange-bolder-hovered: #fbc828;
+  --ds-background-accent-orange-bolder-pressed: #fce4a6;
+  --ds-background-accent-yellow-subtlest: #332e1b;
+  --ds-background-accent-yellow-subtlest-hovered: #533f04;
+  --ds-background-accent-yellow-subtlest-pressed: #7f5f01;
+  --ds-background-accent-yellow-subtler: #533f04;
+  --ds-background-accent-yellow-subtler-hovered: #7f5f01;
+  --ds-background-accent-yellow-subtler-pressed: #946f00;
+  --ds-background-accent-yellow-subtle: #7f5f01;
+  --ds-background-accent-yellow-subtle-hovered: #533f04;
+  --ds-background-accent-yellow-subtle-pressed: #332e1b;
+  --ds-background-accent-yellow-bolder: #ddb30e;
+  --ds-background-accent-yellow-bolder-hovered: #eed12b;
+  --ds-background-accent-yellow-bolder-pressed: #f5e989;
+  --ds-background-accent-green-subtlest: #1c3329;
+  --ds-background-accent-green-subtlest-hovered: #164b35;
+  --ds-background-accent-green-subtlest-pressed: #216e4e;
+  --ds-background-accent-green-subtler: #164b35;
+  --ds-background-accent-green-subtler-hovered: #216e4e;
+  --ds-background-accent-green-subtler-pressed: #1f845a;
+  --ds-background-accent-green-subtle: #216e4e;
+  --ds-background-accent-green-subtle-hovered: #164b35;
+  --ds-background-accent-green-subtle-pressed: #1c3329;
+  --ds-background-accent-green-bolder: #4bce97;
+  --ds-background-accent-green-bolder-hovered: #7ee2b8;
+  --ds-background-accent-green-bolder-pressed: #baf3db;
+  --ds-background-accent-teal-subtlest: #1e3137;
+  --ds-background-accent-teal-subtlest-hovered: #164555;
+  --ds-background-accent-teal-subtlest-pressed: #206a83;
+  --ds-background-accent-teal-subtler: #164555;
+  --ds-background-accent-teal-subtler-hovered: #206a83;
+  --ds-background-accent-teal-subtler-pressed: #227d9b;
+  --ds-background-accent-teal-subtle: #206a83;
+  --ds-background-accent-teal-subtle-hovered: #164555;
+  --ds-background-accent-teal-subtle-pressed: #1e3137;
+  --ds-background-accent-teal-bolder: #6cc3e0;
+  --ds-background-accent-teal-bolder-hovered: #9dd9ee;
+  --ds-background-accent-teal-bolder-pressed: #c6edfb;
+  --ds-background-accent-blue-subtlest: #1c2b42;
+  --ds-background-accent-blue-subtlest-hovered: #123263;
+  --ds-background-accent-blue-subtlest-pressed: #1558bc;
+  --ds-background-accent-blue-subtler: #123263;
+  --ds-background-accent-blue-subtler-hovered: #1558bc;
+  --ds-background-accent-blue-subtler-pressed: #1868db;
+  --ds-background-accent-blue-subtle: #1558bc;
+  --ds-background-accent-blue-subtle-hovered: #123263;
+  --ds-background-accent-blue-subtle-pressed: #1c2b42;
+  --ds-background-accent-blue-bolder: #669df1;
+  --ds-background-accent-blue-bolder-hovered: #8fb8f6;
+  --ds-background-accent-blue-bolder-pressed: #cfe1fd;
+  --ds-background-accent-purple-subtlest: #35243f;
+  --ds-background-accent-purple-subtlest-hovered: #48245d;
+  --ds-background-accent-purple-subtlest-pressed: #803fa5;
+  --ds-background-accent-purple-subtler: #48245d;
+  --ds-background-accent-purple-subtler-hovered: #803fa5;
+  --ds-background-accent-purple-subtler-pressed: #964ac0;
+  --ds-background-accent-purple-subtle: #803fa5;
+  --ds-background-accent-purple-subtle-hovered: #48245d;
+  --ds-background-accent-purple-subtle-pressed: #35243f;
+  --ds-background-accent-purple-bolder: #c97cf4;
+  --ds-background-accent-purple-bolder-hovered: #d8a0f7;
+  --ds-background-accent-purple-bolder-pressed: #eed7fc;
+  --ds-background-accent-magenta-subtlest: #3d2232;
+  --ds-background-accent-magenta-subtlest-hovered: #50253f;
+  --ds-background-accent-magenta-subtlest-pressed: #943d73;
+  --ds-background-accent-magenta-subtler: #50253f;
+  --ds-background-accent-magenta-subtler-hovered: #943d73;
+  --ds-background-accent-magenta-subtler-pressed: #ae4787;
+  --ds-background-accent-magenta-subtle: #943d73;
+  --ds-background-accent-magenta-subtle-hovered: #50253f;
+  --ds-background-accent-magenta-subtle-pressed: #3d2232;
+  --ds-background-accent-magenta-bolder: #e774bb;
+  --ds-background-accent-magenta-bolder-hovered: #f797d2;
+  --ds-background-accent-magenta-bolder-pressed: #fdd0ec;
+  --ds-background-accent-gray-subtlest: #303134;
+  --ds-background-accent-gray-subtlest-hovered: #3d3f43;
+  --ds-background-accent-gray-subtlest-pressed: #4b4d51;
+  --ds-background-accent-gray-subtler: #4b4d51;
+  --ds-background-accent-gray-subtler-hovered: #63666b;
+  --ds-background-accent-gray-subtler-pressed: #7e8188;
+  --ds-background-accent-gray-subtle: #63666b;
+  --ds-background-accent-gray-subtle-hovered: #4b4d51;
+  --ds-background-accent-gray-subtle-pressed: #3d3f43;
+  --ds-background-accent-gray-bolder: #96999e;
+  --ds-background-accent-gray-bolder-hovered: #a9abaf;
+  --ds-background-accent-gray-bolder-pressed: #bfc1c4;
+  --ds-background-disabled: #bdbdbd0a;
+  --ds-background-input: #242528;
+  --ds-background-input-hovered: #2b2c2f;
+  --ds-background-input-pressed: #242528;
+  --ds-background-inverse-subtle: #ffffff29;
+  --ds-background-inverse-subtle-hovered: #ffffff3d;
+  --ds-background-inverse-subtle-pressed: #ffffff52;
+  --ds-background-neutral: #ceced912;
+  --ds-background-neutral-hovered: #e3e4f21f;
+  --ds-background-neutral-pressed: #e5e9f640;
+  --ds-background-neutral-subtle: #0000;
+  --ds-background-neutral-subtle-hovered: #ceced912;
+  --ds-background-neutral-subtle-pressed: #e3e4f21f;
+  --ds-background-neutral-bold: #cecfd2;
+  --ds-background-neutral-bold-hovered: #bfc1c4;
+  --ds-background-neutral-bold-pressed: #a9abaf;
+  --ds-background-selected: #1c2b42;
+  --ds-background-selected-hovered: #123263;
+  --ds-background-selected-pressed: #1558bc;
+  --ds-background-selected-bold: #669df1;
+  --ds-background-selected-bold-hovered: #8fb8f6;
+  --ds-background-selected-bold-pressed: #cfe1fd;
+  --ds-background-brand-subtlest: #1c2b42;
+  --ds-background-brand-subtlest-hovered: #123263;
+  --ds-background-brand-subtlest-pressed: #1558bc;
+  --ds-background-brand-bold: #669df1;
+  --ds-background-brand-bold-hovered: #8fb8f6;
+  --ds-background-brand-bold-pressed: #cfe1fd;
+  --ds-background-brand-boldest: #e9f2fe;
+  --ds-background-brand-boldest-hovered: #cfe1fd;
+  --ds-background-brand-boldest-pressed: #8fb8f6;
+  --ds-background-danger: #42221f;
+  --ds-background-danger-hovered: #5d1f1a;
+  --ds-background-danger-pressed: #ae2e24;
+  --ds-background-danger-bold: #f87168;
+  --ds-background-danger-bold-hovered: #fd9891;
+  --ds-background-danger-bold-pressed: #ffd5d2;
+  --ds-background-warning: #3a2c1f;
+  --ds-background-warning-hovered: #693200;
+  --ds-background-warning-pressed: #9e4c00;
+  --ds-background-warning-bold: #fbc828;
+  --ds-background-warning-bold-hovered: #fca700;
+  --ds-background-warning-bold-pressed: #f68909;
+  --ds-background-success: #28311b;
+  --ds-background-success-hovered: #37471f;
+  --ds-background-success-pressed: #4c6b1f;
+  --ds-background-success-bold: #94c748;
+  --ds-background-success-bold-hovered: #b3df72;
+  --ds-background-success-bold-pressed: #d3f1a7;
+  --ds-background-discovery: #35243f;
+  --ds-background-discovery-hovered: #48245d;
+  --ds-background-discovery-pressed: #803fa5;
+  --ds-background-discovery-bold: #c97cf4;
+  --ds-background-discovery-bold-hovered: #d8a0f7;
+  --ds-background-discovery-bold-pressed: #eed7fc;
+  --ds-background-information: #1c2b42;
+  --ds-background-information-hovered: #123263;
+  --ds-background-information-pressed: #1558bc;
+  --ds-background-information-bold: #669df1;
+  --ds-background-information-bold-hovered: #8fb8f6;
+  --ds-background-information-bold-pressed: #cfe1fd;
+  --ds-blanket: #10121499;
+  --ds-blanket-selected: #1d7afc14;
+  --ds-blanket-danger: #e3493514;
+  --ds-interaction-hovered: #fff3;
+  --ds-interaction-pressed: #ffffff5c;
+  --ds-skeleton: #ceced912;
+  --ds-skeleton-subtle: #bdbdbd0a;
+  --ds-chart-categorical-1: #4688ec;
+  --ds-chart-categorical-1-hovered: #669df1;
+  --ds-chart-categorical-2: #94c748;
+  --ds-chart-categorical-2-hovered: #b3df72;
+  --ds-chart-categorical-3: #c97cf4;
+  --ds-chart-categorical-3-hovered: #d8a0f7;
+  --ds-chart-categorical-4: #fca700;
+  --ds-chart-categorical-4-hovered: #fbc828;
+  --ds-chart-categorical-5: #1558bc;
+  --ds-chart-categorical-5-hovered: #1868db;
+  --ds-chart-categorical-6: #964ac0;
+  --ds-chart-categorical-6-hovered: #af59e1;
+  --ds-chart-categorical-7: #42b2d7;
+  --ds-chart-categorical-7-hovered: #6cc3e0;
+  --ds-chart-categorical-8: #e06c00;
+  --ds-chart-categorical-8-hovered: #f68909;
+  --ds-chart-lime-bold: #82b536;
+  --ds-chart-lime-bold-hovered: #94c748;
+  --ds-chart-lime-bolder: #94c748;
+  --ds-chart-lime-bolder-hovered: #b3df72;
+  --ds-chart-lime-boldest: #b3df72;
+  --ds-chart-lime-boldest-hovered: #d3f1a7;
+  --ds-chart-neutral: #7e8188;
+  --ds-chart-neutral-hovered: #96999e;
+  --ds-chart-red-bold: #e2483d;
+  --ds-chart-red-bold-hovered: #f15b50;
+  --ds-chart-red-bolder: #f15b50;
+  --ds-chart-red-bolder-hovered: #f87168;
+  --ds-chart-red-boldest: #fd9891;
+  --ds-chart-red-boldest-hovered: #ffd5d2;
+  --ds-chart-orange-bold: #f68909;
+  --ds-chart-orange-bold-hovered: #fca700;
+  --ds-chart-orange-bolder: #fca700;
+  --ds-chart-orange-bolder-hovered: #fbc828;
+  --ds-chart-orange-boldest: #fbc828;
+  --ds-chart-orange-boldest-hovered: #fce4a6;
+  --ds-chart-yellow-bold: #cf9f02;
+  --ds-chart-yellow-bold-hovered: #ddb30e;
+  --ds-chart-yellow-bolder: #ddb30e;
+  --ds-chart-yellow-bolder-hovered: #eed12b;
+  --ds-chart-yellow-boldest: #eed12b;
+  --ds-chart-yellow-boldest-hovered: #f5e989;
+  --ds-chart-green-bold: #2abb7f;
+  --ds-chart-green-bold-hovered: #4bce97;
+  --ds-chart-green-bolder: #4bce97;
+  --ds-chart-green-bolder-hovered: #7ee2b8;
+  --ds-chart-green-boldest: #7ee2b8;
+  --ds-chart-green-boldest-hovered: #baf3db;
+  --ds-chart-teal-bold: #42b2d7;
+  --ds-chart-teal-bold-hovered: #6cc3e0;
+  --ds-chart-teal-bolder: #6cc3e0;
+  --ds-chart-teal-bolder-hovered: #9dd9ee;
+  --ds-chart-teal-boldest: #9dd9ee;
+  --ds-chart-teal-boldest-hovered: #c6edfb;
+  --ds-chart-blue-bold: #357de8;
+  --ds-chart-blue-bold-hovered: #4688ec;
+  --ds-chart-blue-bolder: #4688ec;
+  --ds-chart-blue-bolder-hovered: #669df1;
+  --ds-chart-blue-boldest: #8fb8f6;
+  --ds-chart-blue-boldest-hovered: #cfe1fd;
+  --ds-chart-purple-bold: #af59e1;
+  --ds-chart-purple-bold-hovered: #bf63f3;
+  --ds-chart-purple-bolder: #bf63f3;
+  --ds-chart-purple-bolder-hovered: #c97cf4;
+  --ds-chart-purple-boldest: #d8a0f7;
+  --ds-chart-purple-boldest-hovered: #eed7fc;
+  --ds-chart-magenta-bold: #cd519d;
+  --ds-chart-magenta-bold-hovered: #da62ac;
+  --ds-chart-magenta-bolder: #da62ac;
+  --ds-chart-magenta-bolder-hovered: #e774bb;
+  --ds-chart-magenta-boldest: #f797d2;
+  --ds-chart-magenta-boldest-hovered: #fdd0ec;
+  --ds-chart-gray-bold: #7e8188;
+  --ds-chart-gray-bold-hovered: #96999e;
+  --ds-chart-gray-bolder: #96999e;
+  --ds-chart-gray-bolder-hovered: #a9abaf;
+  --ds-chart-gray-boldest: #a9abaf;
+  --ds-chart-gray-boldest-hovered: #bfc1c4;
+  --ds-chart-brand: #4688ec;
+  --ds-chart-brand-hovered: #669df1;
+  --ds-chart-danger: #e2483d;
+  --ds-chart-danger-hovered: #f15b50;
+  --ds-chart-danger-bold: #f87168;
+  --ds-chart-danger-bold-hovered: #fd9891;
+  --ds-chart-warning: #f68909;
+  --ds-chart-warning-hovered: #fca700;
+  --ds-chart-warning-bold: #fbc828;
+  --ds-chart-warning-bold-hovered: #fce4a6;
+  --ds-chart-success: #82b536;
+  --ds-chart-success-hovered: #94c748;
+  --ds-chart-success-bold: #b3df72;
+  --ds-chart-success-bold-hovered: #d3f1a7;
+  --ds-chart-discovery: #bf63f3;
+  --ds-chart-discovery-hovered: #c97cf4;
+  --ds-chart-discovery-bold: #d8a0f7;
+  --ds-chart-discovery-bold-hovered: #eed7fc;
+  --ds-chart-information: #4688ec;
+  --ds-chart-information-hovered: #669df1;
+  --ds-chart-information-bold: #8fb8f6;
+  --ds-chart-information-bold-hovered: #cfe1fd;
+  --ds-surface: #1f1f21;
+  --ds-surface-hovered: #242528;
+  --ds-surface-pressed: #2b2c2f;
+  --ds-surface-overlay: #2b2c2f;
+  --ds-surface-overlay-hovered: #303134;
+  --ds-surface-overlay-pressed: #3d3f43;
+  --ds-surface-raised: #242528;
+  --ds-surface-raised-hovered: #2b2c2f;
+  --ds-surface-raised-pressed: #303134;
+  --ds-surface-sunken: #18191a;
+  --ds-shadow-overflow: 0px 0px 12px #0104048f,0px 0px 1px #01040480;
+  --ds-shadow-overflow-perimeter: #01040480;
+  --ds-shadow-overflow-spread: #0104048f;
+  --ds-shadow-overlay: 0px 0px 0px 1px #bdbdbd1f,0px 8px 12px #0104045c,0px 0px 1px 1px #01040480;
+  --ds-shadow-raised: 0px 0px 0px 1px #0000,0px 1px 1px #01040480,0px 0px 1px #01040480;
+  --ds-opacity-disabled: .4;
+  --ds-opacity-loading: .2;
+  --ds-UNSAFE-transparent: transparent;
+  --ds-elevation-surface-current: #1f1f21;
+  --n_bnrM: 0px;
+  --n_tbrM: 48px;
+  --full-cover-image-margin: -40px;
+  --full-cover-image-width: calc(100% + 80px);
+  --ak-renderer-base-font-size: 16px;
+  --ak-renderer-editor-font-heading-h1: normal 600 1.71429em/1.16667 "Atlassian Sans", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, "Helvetica Neue", sans-serif;
+  --ak-renderer-editor-font-heading-h2: normal 600 1.42857em/1.2 "Atlassian Sans", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, "Helvetica Neue", sans-serif;
+  --ak-renderer-editor-font-heading-h3: normal 600 1.14286em/1.25 "Atlassian Sans", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, "Helvetica Neue", sans-serif;
+  --ak-renderer-editor-font-heading-h4: normal 600 1em/1.14286 "Atlassian Sans", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, "Helvetica Neue", sans-serif;
+  --ak-renderer-editor-font-heading-h5: normal 600 0.857143em/1.33333 "Atlassian Sans", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, "Helvetica Neue", sans-serif;
+  --ak-renderer-editor-font-heading-h6: normal 600 0.785714em/1.45455 "Atlassian Sans", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, "Helvetica Neue", sans-serif;
+  --ak-renderer-editor-font-normal-text: normal 400 1em/1.714 "Atlassian Sans", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, "Helvetica Neue", sans-serif;
+}
+
+html[data-color-mode="light"] .content {
+  background-color: #fff;
+  background-image: none;
+}
+
+html[data-color-mode="dark"] .content {
+  background-color: #1f1f21;
+  background-image: none;
+}
+
+.content {
+  text-decoration-skip-ink: auto;
+  letter-spacing: 0;
+  color: var(--ds-text,#172b4d);
+  padding: 24px;
+
+  :global(#Content) {
+    padding: 0 !important;
+  }
+
+  h1.title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+    text-decoration-skip-ink: auto;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    padding: 0;
+    text-transform: none;
+    margin: 30px 0 0 0;
+    color: var(--ds-text,#333);
+    letter-spacing: 0;
+    margin-bottom: 0;
+    scroll-margin-top: 48px;
+  }
+
+  h4,h5,h6 {
+    margin: 20px 0 0 0;
+  }
+
+  h1 {
+    font: var(--ak-renderer-editor-font-heading-h1);
+    font-size: 1.714em;
+    font-weight: 600;
+    line-height: 1.166;
+    margin-top: 1.45833em;
+  }
+  
+  h2 {
+    font: var(--ak-renderer-editor-font-heading-h2);
+    margin-bottom: 0;
+    font-size: 1.43em;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-top: 1.4em;
+  }
+  
+  h3 {
+    font: var(--ak-renderer-editor-font-heading-h3);
+    margin-bottom: 0;
+    font-size: 1.142em;
+    line-height: 1.5;
+    margin-top: 1.31249em;
+  }
+  
+  h4 {
+    font: var(--ak-renderer-editor-font-heading-h4);
+    font-size: 1em;
+    line-height: 1.428;
+    margin-top: 1.25em;
+  }
+  
+  h5 {
+    font: var(--ak-renderer-editor-font-heading-h5);
+    text-transform: none;
+    font-size: 0.857em;
+    line-height: 1.333;
+    margin-top: 1.45833em;
+  }
+  
+  h6 {
+    letter-spacing: 0;
+    color: var(--ds-text-subtle,#707070);
+    font: var(--ak-renderer-editor-font-heading-h6);
+    text-transform: none;
+    line-height: 1.454;
+    font-weight: 600;
+    font-size: 0.785em;
+    margin-top: 1.59091em;
+  }
+
+  :global(p:not(.ellipsis)) {
+    text-decoration-skip-ink: auto;
+    letter-spacing: 0;
+    color: var(--ds-text,#172b4d);
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    padding: 0;
+    margin: 10px 0 0 0;
+    font: var(--ak-renderer-editor-font-normal-text);
+    margin-top: .75rem;
+    margin-bottom: 0;
+  }
+
+  :global(.panelContent) {
+    p {
+      margin-top: 0;
+    }
+  }
+
+  li {
+    ul > li {
+      list-style-type: circle;
+
+      ul > li {
+        list-style-type: square;
+      }
+    }
+
+    ol > li {
+      list-style-type: lower-alpha;
+      ol > li {
+        list-style-type: lower-roman;
+      }
+    }
+
+    p {
+      margin-left: unset !important;
+    }
+  }
+
+  code {
+    text-decoration-skip-ink: auto;
+    letter-spacing: 0;
+    list-style-type: disc;
+    border-radius: var(--ds-border-radius,3px);
+    font: var(--ds-font-code,normal 400 .875em/1 ui-monospace,Menlo,"Segoe UI Mono","Ubuntu Mono",monospace);
+    border-style: none;
+    overflow-x: auto;
+    color: var(--ds-text,#172b4d);
+    overflow-y: auto;
+    line-height: inherit;
+    overflow-wrap: break-word;
+    padding-top: 2px;
+    padding-right: .5ch;
+    padding-bottom: 2px;
+    padding-left: .5ch;
+    display: inline;
+    background-color: var(--ds--code--bg-color,var(--ds-background-neutral,#091e420f));
+    box-decoration-break: clone;
+    white-space: pre-wrap;
+  }
+
+  ul {
+    font: var(--ds-font-body,normal 400 14px/1.42857142857143 -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Fira Sans","Droid Sans","Helvetica Neue",sans-serif);
+    font-weight: 400;
+    font-family: var(--ds-font-family-body,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif);
+    font-size: var(--ak-renderer-base-font-size);
+    color: var(--ds-text,#172b4d);
+    word-wrap: break-word;
+    // white-space: pre-wrap;
+    line-height: 1.5rem;
+    padding: 0;
+    box-sizing: border-box;
+    padding-left: var(--ed--list--item-counter--padding,24px);
+    margin: 10px 0px 0px;
+    display: flow-root;
+    list-style-type: disc;
+
+    li {
+      font: var(--ds-font-body,normal 400 14px/1.42857142857143 -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Fira Sans","Droid Sans","Helvetica Neue",sans-serif);
+      font-weight: 400;
+      font-family: var(--ds-font-family-body,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif);
+      font-size: var(--ak-renderer-base-font-size);
+      color: var(--ds-text,#172b4d);
+      word-wrap: break-word;
+      // white-space: pre-wrap;
+      line-height: 1.5rem;
+      list-style-type: disc;
+    }
+  }
+
+  ol {
+    font: var(--ds-font-body,normal 400 14px/1.42857142857143 -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Fira Sans","Droid Sans","Helvetica Neue",sans-serif);
+    text-decoration-skip-ink: auto;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-family: var(--ds-font-family-body,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif);
+    font-size: var(--ak-renderer-base-font-size);
+    color: var(--ds-text,#172b4d);
+    word-wrap: break-word;
+    // white-space: pre-wrap;
+    line-height: 1.5rem;
+    padding: 0;
+    box-sizing: border-box;
+    padding-left: var(--ed--list--item-counter--padding,24px);
+    margin: 10px 0px 0px;
+    display: flow-root;
+    list-style-type: decimal;
+
+    li {
+      font: var(--ds-font-body,normal 400 14px/1.42857142857143 -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Fira Sans","Droid Sans","Helvetica Neue",sans-serif);
+      text-decoration-skip-ink: auto;
+      font-weight: 400;
+      letter-spacing: 0;
+      font-family: var(--ds-font-family-body,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",sans-serif);
+      font-size: var(--ak-renderer-base-font-size);
+      color: var(--ds-text,#172b4d);
+      word-wrap: break-word;
+      // white-space: pre-wrap;
+      line-height: 1.5rem;
+      list-style-type: decimal;
+    }
+  }
+
+  :global(ul.inline-task-list) {
+    padding-inline-start: 0;
+
+    :global(li.checked) {
+      position: relative;
+      padding-left: 24px;
+      
+      &::before {
+        content: "";
+        position: absolute;
+        left: 4px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 16px;
+        height: 16px;
+        background-color: var(--ds-icon-accent-blue, #4c6b1f);
+        border-radius: 3px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M13.3337 4L6.00033 11.3333L2.66699 8' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+        background-size: 12px;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+    
+    li {
+      list-style-type: none;
+      position: relative;
+      padding-left: 24px;
+      
+      &::before {
+        content: "";
+        position: absolute;
+        left: 4px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 16px;
+        height: 16px;
+        background-color: var(--ds-background-neutral, #f1f2f3);
+        border: 1px solid var(--ds-border, #dfe1e6);
+        border-radius: 3px;
+      }
+    }
+  }
+
+  a {
+    text-decoration-skip-ink: auto;
+    letter-spacing: 0;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    font: var(--ak-renderer-editor-font-normal-text);
+    text-decoration: none;
+    color: var(--ds-link,#0c66e4);
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:visited {
+      color: var(--ds-link-pressed,#0052cc);
+    }
+  }
+
+  th {
+    background-color: var(--ds-background-accent-gray-subtlest, #f1f2f3);
+  }
+
+  :global(.code) {
+    padding: 8px;
+    tab-size: 4;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--ds-background-accent-gray-subtlest, #f1f2f3);
+
+    :global(.codeContent) {
+      padding: 0;
+    }
+
+    pre {
+      margin: 0;
+    }
+  }
+
+  :global(.confluence-embedded-image) {
+    margin-top: 24px;
+  }
+
+  :global(.expand-control) {
+    :global(.expand-control-text) {
+      color: var(--ds-text-subtle, #44546F);
+    }
+  }
+
+  :global(.expand-content) {
+    li {
+      margin-inline-start: 1.5em;
+    }
+  }
+
+  :global(.user-mention) {
+    &::before {
+      content: "@";
+    }
+  }
+
+  :global(.results-container) {
+    :global(.update-item-icon span) {
+      margin-right: 8px;
+      background-image: url("https://d1pc4cpjxuww6d.cloudfront.net/archedata.atlassian.net/wiki/s/19.0.85/_/download/resources/com.atlassian.confluence.plugins.confluence-icons:confluence-icon-resources/assets/icons/confluence-icon-page.svg");
+    }
+    :global(.update-item-meta) {
+      font-size: 12px;
+      line-height: 16px;
+      color: var(--ds-text-subtlest, #707070);
+    }
+    ul {
+      li {
+        list-style-type: none;
+      }
+    }
+  }
+
+  :global(.confluence-anchor-link) {
+    white-space: nowrap;
+  }
+}

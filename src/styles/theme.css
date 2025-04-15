@@ -1,0 +1,97 @@
+:root[data-color-mode="light"] {
+  --bg-color: #ffffff;
+  --text-color: rgba(0, 0, 0, 0.87);
+  --primary-color: #1976d2;
+  --border-color: rgba(0, 0, 0, 0.12);
+  --hover-color: rgba(0, 0, 0, 0.04);
+  --paper-color: #ffffff;
+  --secondary-text-color: rgba(0, 0, 0, 0.6);
+}
+
+:root[data-color-mode="dark"] {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --primary-color: #90caf9;
+  --border-color: rgba(255, 255, 255, 0.12);
+  --hover-color: rgba(255, 255, 255, 0.08);
+  --paper-color: #1e1e1e;
+  --secondary-text-color: rgba(255, 255, 255, 0.7);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Material-UI component style overrides */
+.MuiPaper-root {
+  background-color: var(--paper-color) !important;
+  color: var(--text-color) !important;
+}
+
+.MuiAppBar-root {
+  background-color: var(--paper-color) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+.MuiDrawer-paper {
+  background-color: var(--paper-color) !important;
+  border-right: 1px solid var(--border-color) !important;
+}
+
+.MuiListItem-root:hover {
+  background-color: var(--hover-color) !important;
+}
+
+.MuiCard-root {
+  background-color: var(--paper-color) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+.MuiTable-root {
+  background-color: var(--paper-color) !important;
+  color: var(--text-color) !important;
+}
+
+.MuiTableHead-root .MuiTableCell-head {
+  background-color: var(--hover-color) !important;
+  color: var(--text-color) !important;
+}
+
+.MuiTableBody-root .MuiTableCell-body {
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+.MuiTableRow-root:hover {
+  background-color: var(--hover-color) !important;
+}
+
+.MuiTableCell-root {
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+.MuiInputBase-root {
+  color: var(--text-color) !important;
+}
+
+.MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: var(--border-color) !important;
+}
+
+.MuiTypography-colorTextSecondary {
+  color: var(--secondary-text-color) !important;
+}
+
+.MuiDivider-root {
+  border-color: var(--border-color) !important;
+}
+
+.MuiMenu-paper {
+  background-color: var(--paper-color) !important;
+  color: var(--text-color) !important;
+}
+
+.MuiMenuItem-root:hover {
+  background-color: var(--hover-color) !important;
+}
