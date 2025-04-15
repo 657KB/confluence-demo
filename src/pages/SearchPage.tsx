@@ -65,7 +65,6 @@ export default function SearchPage() {
     } catch (error) {
       console.error("Error loading data from localStorage:", error);
     }
-    console.log("diu");
   }, []);
 
   // Automatically generate auth when email or apiToken changes
