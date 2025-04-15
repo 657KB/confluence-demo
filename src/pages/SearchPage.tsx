@@ -18,6 +18,7 @@ import {
 } from "@mui/material";
 import { useConfluenceSearch } from "../hooks/useConfluenceSearch";
 import { useEffect, useState, useRef } from "react";
+import { SearchResult } from "../services/confluenceApi";
 
 export default function SearchPage() {
   const formRef = useRef<HTMLFormElement>(null);
@@ -35,7 +36,9 @@ export default function SearchPage() {
   const [validationError, setValidationError] = useState<string | null>(null);
   const [nextCursor, setNextCursor] = useState<string | undefined>(undefined);
   const [prevCursors, setPrevCursors] = useState<string[]>([]);
-  const [hasSearched, setHasSearched] = useState(false);
+  const [displayResults, setDisplayResults] = useState<
+    SearchResult | undefined
+  >();
 
   const {
     mutate: search,
@@ -43,6 +46,15 @@ export default function SearchPage() {
     isPending,
     error,
   } = useConfluenceSearch();
+
+  useEffect(() => {
+    if (searchResults) {
+      setDisplayResults(searchResults);
+      document.getElementById("search-results-title")?.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  }, [searchResults]);
 
   useEffect(() => {
     try {
@@ -88,7 +100,6 @@ export default function SearchPage() {
 
   const handleSearch = (event: React.FormEvent) => {
     event.preventDefault();
-    setHasSearched(true);
 
     const form = formRef.current;
     if (!form) return;
@@ -197,9 +208,6 @@ export default function SearchPage() {
     }
   };
 
-  // Use search results directly
-  const displayResults = !hasSearched ? null : searchResults;
-
   // Reset pagination loading state when search results are updated
   useEffect(() => {
     if (searchResults) {
@@ -300,7 +308,7 @@ export default function SearchPage() {
 
       {displayResults && (
         <Paper sx={{ p: 3 }}>
-          <Typography variant="h6" gutterBottom>
+          <Typography id="search-results-title" variant="h6" gutterBottom>
             Search Results ({displayResults.totalSize} total)
           </Typography>
           <Box sx={{ position: "relative" }}>
@@ -369,26 +377,22 @@ export default function SearchPage() {
             </List>
           </Box>
 
-          {displayResults.totalSize > pageSize && (
-            <Box
-              sx={{ display: "flex", justifyContent: "space-between", mt: 2 }}
+          <Box sx={{ display: "flex", justifyContent: "space-between", mt: 2 }}>
+            <Button
+              variant="outlined"
+              onClick={handlePrevPage}
+              disabled={prevCursors.length === 0 || isPaginationLoading}
             >
-              <Button
-                variant="outlined"
-                onClick={handlePrevPage}
-                disabled={prevCursors.length === 0 || isPaginationLoading}
-              >
-                Previous Page
-              </Button>
-              <Button
-                variant="outlined"
-                onClick={handleNextPage}
-                disabled={!nextCursor || isPaginationLoading}
-              >
-                Next Page
-              </Button>
-            </Box>
-          )}
+              Previous Page
+            </Button>
+            <Button
+              variant="outlined"
+              onClick={handleNextPage}
+              disabled={!nextCursor || isPaginationLoading}
+            >
+              Next Page
+            </Button>
+          </Box>
         </Paper>
       )}
     </Container>
