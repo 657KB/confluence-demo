@@ -65,8 +65,6 @@ export default function PageDetail() {
   useEffect(() => {
     if (page) {
       document.title = page.title;
-    } else {
-      document.title = "Loading...";
     }
   }, [page]);
 
