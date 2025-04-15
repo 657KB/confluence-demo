@@ -30,7 +30,7 @@ export default function SearchPage() {
   });
 
   const [auth, setAuth] = useState("");
-  const [pageSize, setPageSize] = useState(50);
+  const [pageSize, setPageSize] = useState(25);
   const [isPaginationLoading, setIsPaginationLoading] = useState(false);
   const [validationError, setValidationError] = useState<string | null>(null);
   const [nextCursor, setNextCursor] = useState<string | undefined>(undefined);
