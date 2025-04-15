@@ -8,8 +8,12 @@
   ],
   "rewrites": [
     {
-      "source": "/api/(.*)",
-      "destination": "/src/api/$1.ts"
+      "source": "/api/pages/:pageId",
+      "destination": "/src/api/pages.ts"
+    },
+    {
+      "source": "/api/search",
+      "destination": "/src/api/search.ts"
     }
   ]
 }

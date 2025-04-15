@@ -2,7 +2,7 @@ import { VercelRequest, VercelResponse } from "@vercel/node";
 import axios from "axios";
 import dotenv from "dotenv";
 
-import { allowCors } from "../../middleware/cors";
+import { allowCors } from "../middleware/cors";
 
 dotenv.config();
 
@@ -12,8 +12,8 @@ async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   try {
-    const { pageId } = req.query;
     const { domain } = req.query;
+    const pageId = req.url?.split("/pages/")[1];
     const auth = req.headers.authorization;
 
     if (!auth) {
@@ -24,6 +24,10 @@ async function handler(req: VercelRequest, res: VercelResponse) {
 
     if (!domain) {
       return res.status(400).json({ error: "Domain parameter is required" });
+    }
+
+    if (!pageId) {
+      return res.status(404).json({ error: "Page not found" });
     }
 
     const baseUrl = `https://${domain}.atlassian.net/wiki`;
